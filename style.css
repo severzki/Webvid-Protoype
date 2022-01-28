@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  background-image: url("img/bg_img.svg"),
+    linear-gradient(rgba(183, 182, 255, 1), rgba(46, 59, 128, 1));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Red Hat Display";
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.logo {
+  font-size: 1.6em;
+}
+
+.tagline {
+  font-style: italic;
+  font-weight: 100;
+}
+
+hr {
+  margin-left: 50%;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+button {
+  border: none;
+  padding: 12px;
+  width: 150px;
+  background-color: rgb(63, 55, 55);
+  color: white;
+  border-radius: 20px;
+  outline: none;
+}
+
+button:hover {
+  color: greenyellow;
+  background-color: black;
+}
+
+.descriptions {
+  word-spacing: 0.1em;
+
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  background-color: rgb(63, 55, 55);
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.descriptions h2 {
+  border-bottom: 1px solid white;
+  margin: auto;
+  padding: 4px;
+  margin-bottom: 12px;
+  width: 20%;
+  font-size: 1em;
+}
+
+.descriptions p {
+  text-align: left;
+  width: 24%;
+  margin: auto;
+  font-size: 1em;
+}
+
+.about_the_app p {
+  width: 48%;
+}
+
+.how_to_use p {
+  margin-left: 30%;
+  width: 70%;
+}
+
+.content {
+  margin-bottom: 40px;
+}

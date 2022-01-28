@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_signup_login.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <title>WebVid - SignUp</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1>WebVid Chat</h1>
+      </div>
+      <div class="tagline">
+        <h3>Instant Video Chatting on the Web</h3>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Sign Up</h2>
+      <form action="">
+        <div class="email_input">
+          <input
+            type="email"
+            autocomplete="off"
+            id="email_id"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z0-9.-]{1,}[.]{1}[a-zA-Z0-9]{2,}"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="pswd_input">
+          <input
+            type="password"
+            autocomplete="off"
+            id="pswd"
+            pattern="[\S]{8,}"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="cnfpswd_input">
+          <input
+            type="password"
+            autocomplete="off"
+            id="cnf_pswd"
+            pattern="[\S]{8,}"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <button type="submit" id="submit_btn" class="buttons">SIGN UP</button>
+        <h4>OR</h4>
+        <a href="login.html">Log In</a>
+      </form>
+    </div>
+    <script src="script_signup.js"></script>
+  </body>
+</html>
